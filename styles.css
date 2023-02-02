@@ -1,3 +1,8 @@
+p {
+  margin: 0;
+  padding: 0
+}
+
 .tabs {
   list-style-type: none;
   display: flex;
@@ -9,17 +14,33 @@
   height: 50px;
   width: 100px;
   background-color: white;
-  border: solid 5px rgb(69, 57, 77);
+  border: solid 2px rgb(69, 57, 77);
   color: rgb(69, 57, 77);
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  border-bottom: 0;
 }
 
-.tab-description {
+.tab-name.active {
+  border-color: red;
+}
+
+.tab-name:hover {
+  color: red;
+}
+
+.tab-content {
+  display: none;
   background-color: rgb(210, 200, 254);
   margin-inline-start: 40px;
   margin-top: 0px;
   height: 400px;
   width: 900px;
+  padding: 10px;
+}
+
+.tab-content.active {
+  display: block;
 }

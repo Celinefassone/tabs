@@ -9,14 +9,29 @@
   </head>
 
   <body>
-    <nav id="tabs"></nav>
-    <ul class="tabs">
-      <li class="tab-name">page 1</li>
-      <li class="tab-name">page 2</li>
-      <li class="tab-name">page 3</li>
-      <li class="tab-name">page 4</li>
-      <li class="tab-name">page 5</li>
-    </ul>
-    <p class="tab-description">description</p>
+    <nav id="tabs">
+      <ul class="tabs">
+        <li class="tab-name active" data-tab="1">page 1</li>
+        <li class="tab-name" data-tab="2">page 2</li>
+        <li class="tab-name" data-tab="3">page 3</li>
+        <li class="tab-name" data-tab="4">page 4</li>
+        <li class="tab-name" data-tab="5">page 5</li>
+      </ul>
+    </nav>
+    <div class="tab-content active" data-content="1">
+      <p>Page 1</p>
+    </div>
+    <div class="tab-content" data-content="2">
+      <p>Page 2</p>
+    </div>
+    <div class="tab-content" data-content="3">
+      <p>Page 3</p>
+    </div>
+    <div class="tab-content" data-content="4">
+      <p>Page 4</p>
+    </div>
+    <div class="tab-content" data-content="5">
+      <p>Page 5</p>
+    </div>
   </body>
 </html>
